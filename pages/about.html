@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>About</title>
+	</head>
+	<body>
+		<header class="relative mb-14">
+			<nav class="bg-gray-100 p-4 fixed top-0 left-0 right-0">
+				<div class="lg:mx-28 flex items-center justify-between">
+					<!-- Logo -->
+					<div class="text-black text-lg font-semibold">Ashurbayeva.R.Q</div>
+
+					<!-- Navbar Links -->
+					<div class="hidden md:flex space-x-4 lg:mx-auto lg:gap-4">
+						<a href="../index.html" class="text-black">Home</a>
+						<a href="about.html" class="text-black active">About</a>
+						<a href="videos.html" class="text-black">Videos</a>
+					</div>
+
+					<!-- Responsive Toggle Button -->
+					<div class="md:hidden">
+						<button id="toggleBtn" class="text-black focus:outline-none">
+							<svg
+								class="h-6 w-6"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16m-7 6h7"
+								></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Responsive Navbar Links (Hidden by default) -->
+		<div id="responsiveNav" class="md:hidden hidden relative">
+			<div
+				class="fixed bg-gray-100 mt-1 p-4 right-0 text-center border"
+				style="width: 156px"
+			>
+				<a href="../index.html" class="block text-black mb-2">Home</a>
+				<a href="about.html" class="block text-black mb-2 active">About</a>
+				<a href="videos.html" class="block text-black mb-2">Videos</a>
+			</div>
+		</div>
+
+		<section>
+			<div class="grid lg:grid-cols-2">
+				<!-- col-1 -->
+				<div class="bg-gray-100 flex justify-center items-center py-6">
+					<img class="w-80" src="../img/book.png" alt="" />
+				</div>
+				<!-- col-2 -->
+				<div class="bg-green-100 py-16">
+					<div class="mx-6 lg:mx-28">
+						<h1 class="text-3xl font-bold typewriter">About the Book</h1>
+						<p class="mt-8 text-lg lg:text-xl">
+							The study guide presents a modern view of the problem of
+							psychology and pedagogy in medicine and higher medical education.
+							This book will help students navigate the main categories of
+							psychology and pedagogy, understand the goals, principles, methods
+							and forms of education in a medical university, learn to identify
+							pedagogical and psychological aspects in the work of a doctor,
+							deeply understand the role of general psychology and pedagogy as
+							humanitarian knowledge in professional and personal development
+							improve your professional culture.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-gray-800 text-white py-8 lg:py-14">
+			<div class="container mx-auto text-center">
+				<p class="text-sm">&copy; 2024. All rights reserved.</p>
+			</div>
+		</footer>
+		<script src="../script/app.js"></script>
+	</body>
+</html>
